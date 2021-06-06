@@ -15,3 +15,7 @@ func main(){
 	shredconf.ShredDir("./toShredDir")
 }
 ```
+
+## License
+
+This project is licensed under the ISC License.
