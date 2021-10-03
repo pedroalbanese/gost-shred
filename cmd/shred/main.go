@@ -19,7 +19,7 @@ var (
 func main() {
 	flag.Parse()
 
-	if target == "" {
+	if *target == "" {
 		fmt.Printf("GOST R 50739-95 Data Sanitization Method - ALBANESE Lab (c) 2020-2021\n\n")
 		fmt.Printf("Usage:\n")
 		fmt.Printf("%s [-r] [-i N] -t <file.ext>\n\n", os.Args[0])
@@ -27,8 +27,8 @@ func main() {
 		os.Exit(1)
 	}
 	shredder := shred.Shredder{}
-	shredconf := shred.NewShredderConf(&shredder, shred.WriteZeros|shred.WriteRand, Iter, Remove)
-	matches, err := filepath.Glob(target)
+	shredconf := shred.NewShredderConf(&shredder, shred.WriteZeros|shred.WriteRand, *iter, *remove)
+	matches, err := filepath.Glob(*target)
 	if err != nil {
 		log.Fatal(err)
 	}
