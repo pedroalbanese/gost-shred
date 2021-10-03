@@ -3,19 +3,20 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/pedroalbanese/gost-shred"
 	"log"
 	"os"
 	"path/filepath"
+
+	"github.com/pedroalbanese/gost-shred"
+)
+
+var (
+	iter   = flag.Int("i", 25, "Iterations.")
+	remove = flag.Bool("r", false, "Remove file(s) afterwards.")
+	target = flag.String("t", "", "Target file, directory or wildcard.")
 )
 
 func main() {
-	var Iter int
-	flag.IntVar(&Iter, "i", 1, "Iterations.")
-	var Remove bool
-	flag.BoolVar(&Remove, "r", false, "Remove file(s) afterwards.")
-	var target string
-	flag.StringVar(&target, "t", "", "Target file, directory or wildcard.")
 	flag.Parse()
 
 	if target == "" {
