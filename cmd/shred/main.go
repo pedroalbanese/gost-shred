@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	iter   = flag.Int("i", 25, "Iterations.")
+	iter   = flag.Int("i", 3, "Iterations.")
 	remove = flag.Bool("r", false, "Remove file(s) afterwards.")
 	target = flag.String("t", "", "Target file, directory or wildcard.")
 )
