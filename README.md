@@ -1,5 +1,4 @@
 # gost-shred
-[![CircleCI](https://circleci.com/gh/pedroalbanese/gost-shred.svg?style=svg)](https://circleci.com/gh/pedroalbanese/gost-shred) 
 [![codecov](https://codecov.io/gh/pedroalbanese/gost-shred/branch/master/graph/badge.svg)](https://codecov.io/gh/pedroalbanese/gost-shred) 
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](https://github.com/pedroalbanese/gost-shred/blob/master/LICENSE) 
 [![GoDoc](https://godoc.org/github.com/pedroalbanese/gost-shred?status.png)](http://godoc.org/github.com/pedroalbanese/gost-shred)
@@ -22,6 +21,7 @@ func main(){
 	shredconf.ShredDir("./toShredDir")
 }
 ```
+[GoDoc](https://pkg.go.dev/github.com/pedroalbanese/gost-shred)
 
 ## License
 
