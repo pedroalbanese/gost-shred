@@ -1,3 +1,15 @@
+// GOST-Shred -- GOST R 50739-95 Data Sanitization Method
+// Copyright (C) 2020-2021 Pedro Albanese <pedroalbanese@hotmail.com>
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the ISC Public License.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Command-line GOST R 50739-95 shred function.
 package main
 
 import (
